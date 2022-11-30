@@ -27,13 +27,6 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.title,
-.count,
-.increment-button,
-.save-button {
-  z-index: 100;
-}
-
 .title {
   position: absolute;
   top: 15px;
@@ -52,8 +45,8 @@ body {
 }
  
 
-.increment-button,
-.save-button {
+.red-button,
+.green-button {
   width: 260px;
   color: white;
   font-size: 16px;
@@ -62,15 +55,32 @@ body {
   padding-bottom: 10px;
   border-radius: 10px;  
   border: none;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-.increment-button {
+.red-button:hover {
+  opacity: 0.8;
+}
+
+.red-button:active{
+  opacity: 0.5;
+}
+
+.green-button:hover {
+  opacity: 0.8;
+}
+
+.green-button:active{
+  opacity: 0.5;
+}
+
+.red-button {
   background-color: rgb(198, 2, 2);
   margin-top: 40px;
-
   margin-bottom: 6px;
 }
 
-.save-button {
+.green-button {
   background-color: green;
 }
